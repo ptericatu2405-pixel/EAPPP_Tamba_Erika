@@ -134,13 +134,7 @@ namespace Examen1
 
         private void btnQuitar_Click(object sender, EventArgs e)
         {
-            if (lvPedido.SelectedItems.Count > 0)
-            {
-                lvPedido.Items.Remove(lvPedido.SelectedItems);
-                btnQuitar.Enabled = false;
-                lblEstado.Text = "Estado: Ítem eliminado del pedido.";
-                ActualizarTotal();
-            }
+            
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
